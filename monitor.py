@@ -16,12 +16,6 @@ EMAIL_FROM = os.getenv("EMAIL_FROM")  # 发件人QQ邮箱
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")  # QQ邮箱授权码
 EMAIL_TO = os.getenv("EMAIL_TO")  # 收件人邮箱（可以和发件人相同）
 
-# 测试
-# EMAIL_FROM = "891481675@qq.com"  # 发件人QQ邮箱
-# EMAIL_PASSWORD = "dqlpobglzdzpbeji"  # QQ邮箱授权码
-# EMAIL_TO = "891481675@qq.com"  # 收件人邮箱（可以和发件人相同）
-
-
 def check_api():
     try:
         response = requests.get(API_URL, timeout=10)
