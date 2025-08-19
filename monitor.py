@@ -27,7 +27,7 @@ def check_api():
         print(data["result"]["records"][0]["title"])
         # 检查是否有新的匹配消息
         for records in data["result"]["records"]:
-            if "遵义市大数据集团有限公司" in records["title"] and "笔试成绩" in records["title"] and len(records) > 0:
+            if "遵义市大数据集团有限公司" in records["title"] and "笔试" in records["title"] and len(records) > 0:
                 return True, json.dumps(records["title"], ensure_ascii=False, indent=2)
         return False, "暂无新匹配消息"
 
