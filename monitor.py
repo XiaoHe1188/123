@@ -7,7 +7,7 @@ from email.header import Header
 from email.utils import formataddr
 
 # 配置参数
-API_URL = "https://zys-hr.com/server/examination/hrRecruitmentResults/list?state=2&pageNo=1&pageSize=7"  # 要监控的接口地址
+API_URL = "http://zys-hr.com/server/examination/hrRecruitmentResults/list?state=2&pageNo=1&pageSize=7"  # 要监控的接口地址
 
 # 邮箱配置（从环境变量获取）
 SMTP_SERVER = "smtp.qq.com"
